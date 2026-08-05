@@ -1,5 +1,8 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
+import "./HomePage.css";
+
+const profileImage = `${import.meta.env.BASE_URL}photos/profile.svg`;
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
@@ -8,7 +11,12 @@ function HomePage() {
     <div className="page">
       <section className="hero-section">
         <p className="eyebrow">Portfolio</p>
-        <h1>Hej, jeg hedder Cecilie.</h1>
+        <div className="hero-content">
+          <h1>Hej, jeg hedder Cecilie.</h1>
+          <div className="image-container">
+            <img src={profileImage} alt="Profilbillede" />
+          </div>
+        </div>
         <p className="hero-text">
           Jeg arbejder med frontend, design og digitale produkter. Her samler
           jeg projekter, proces og det, jeg lærer undervejs.
