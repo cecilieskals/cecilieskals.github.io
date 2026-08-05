@@ -1,27 +1,17 @@
 function ContactPage() {
   return (
     <div className="page narrow">
-      <p className="eyebrow">Kontakt</p>
-      <h1>Lad os tale sammen.</h1>
-      <p className="lead">
-        Tilpas links og mailadresse, så siden peger på dine egne profiler.
-      </p>
-
-      <ul className="contact-list">
-        <li>
-          <a href="mailto:dinmail@example.com">dinmail@example.com</a>
-        </li>
-        <li>
-          <a href="https://github.com/username" rel="noreferrer" target="_blank">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com" rel="noreferrer" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <section className="content-card">
+        <p className="eyebrow">Kontakt</p>
+        <div className="contact-details">
+          <a href="mailto:cskals@hotmail.dk">cskals@hotmail.dk</a>
+          <a href="tel:+4551877001">+45 51 87 70 01</a>
+          <a href="https://www.linkedin.com" rel="noreferrer" target="_blank">LinkedIn</a>
+        </div>
+        <div className="contact-card-image">
+          <img src={`${import.meta.env.BASE_URL}public/portfolio-placeholder.svg`} alt="Profilbillede" />
+        </div>
+      </section>
     </div>
   );
 }
