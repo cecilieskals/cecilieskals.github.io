@@ -10,33 +10,20 @@ function HomePage() {
   return (
     <div className="page">
       <section className="hero-section">
-        <p className="eyebrow">Portfolio</p>
         <div className="hero-content">
           <h1>Hej, jeg hedder Cecilie.</h1>
-          <div className="image-container">
-            <img src={profileImage} alt="Profilbillede" />
-          </div>
+          <p className="hero-text">
+            Jeg arbejder med frontend, design og digitale produkter. Her samler
+            jeg projekter, proces og det, jeg lærer undervejs.
+          </p>
         </div>
-        <p className="hero-text">
-          Jeg arbejder med frontend, design og digitale produkter. Her samler
-          jeg projekter, proces og det, jeg lærer undervejs.
-        </p>
-        <div className="actions">
-          <Link className="button" to="/projects">
-            Se projekter
-          </Link>
-          <Link className="button secondary" to="/contact">
-            Kontakt mig
-          </Link>
+        <div className="image-container">
+          <img src={profileImage} alt="Profilbillede" />
         </div>
       </section>
 
       <section className="section">
-        <div className="section-heading">
-          <p className="eyebrow">Udvalgte projekter</p>
-          <h2>Start med få projekter og gør dem stærke.</h2>
-        </div>
-
+        <h2>Projekter</h2>
         <div className="project-grid">
           {featuredProjects.map((project) => (
             <article className="project-card" key={project.slug}>
