@@ -8,7 +8,7 @@ function HomePage() {
   const featuredProjects = projects.slice(0, 2);
 
   return (
-    <div className="page">
+    <div className="home-page">
       <section className="hero-section">
         <div className="hero-content">
           <h1>Hej, jeg hedder Cecilie.</h1>
