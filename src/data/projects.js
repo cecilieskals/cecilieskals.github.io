@@ -7,7 +7,7 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["React", "Vite", "GitHub Pages"],
-    image: `${import.meta.env.BASE_URL}portfolio-placeholder.svg`,
+    image: `${import.meta.env.BASE_URL}photos/gemly-app.svg`,
     links: [
       {
         label: "Live site",
@@ -27,7 +27,7 @@ const projects = [
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Design", "Frontend", "Proces"],
-    image: `${import.meta.env.BASE_URL}portfolio-placeholder.svg`,
+    image: `${import.meta.env.BASE_URL}photos/spilcafe-app.svg`,
     links: [
       {
         label: "Eksempel-link",
