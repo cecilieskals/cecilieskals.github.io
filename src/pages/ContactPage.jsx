@@ -9,7 +9,7 @@ function ContactPage() {
         <div className="contact-card-info">
           <div className="contact-card-image">
             <img
-              src={`${import.meta.env.BASE_URL}./photos/contact-photo.svg`}
+              src={`${import.meta.env.BASE_URL}photos/contact-photo.svg`}
               alt="Profilbillede"
             />
           </div>
