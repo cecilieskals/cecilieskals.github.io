@@ -6,6 +6,11 @@ const profileImage = `${import.meta.env.BASE_URL}photos/mig.svg`;
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
+  const scrollToProjects = () => {
+    document
+      .getElementById("section")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="home-page">
@@ -20,9 +25,11 @@ function HomePage() {
         <div className="image-container">
           <img src={profileImage} alt="Profilbillede" />
         </div>
+        <button className="hero-arrow" onClick={scrollToProjects} aria-label="Gå til projekter">
+          ↓
+        </button>
       </section>
-
-      <section className="section">
+      <section className="section" id="section">
         <h2>Projekter</h2>
         <div className="project-grid">
           {featuredProjects.map((project) => (
