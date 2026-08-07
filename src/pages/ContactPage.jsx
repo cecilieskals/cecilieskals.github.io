@@ -2,6 +2,7 @@ import "./ContactPage.css";
 
 function ContactPage() {
   return (
+    <>
     <section className="contact-card">
       <div className="contact-card-container">
         <p className="contact-heading">KONTAKT</p>
@@ -22,6 +23,8 @@ function ContactPage() {
         </div>
       </div>
     </section>
+    <section className="bottom-section"></section>
+    </>
   );
 }
 
