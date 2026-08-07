@@ -99,6 +99,7 @@ h1 {
   font-size: clamp(2.6rem, 8vw, 5.5rem);
   line-height: 0.95;
   letter-spacing: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -119,12 +120,6 @@ h3 {
 p {
   color: #214221;
   line-height: 1.65;
-}
-
-.hero-text,
-.lead {
-  max-width: 680px;
-  font-size: 1.15rem;
 }
 
 .actions {
@@ -151,45 +146,6 @@ p {
 .button.secondary {
   color: #111827;
   background: transparent;
-}
-
-.section {
-  align-items: space-between;
-  justify-content: center;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  align-items: start;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.project-card {
-  overflow: hidden;
-  border-radius: 0.75rem;
-  width: 100%;
-  max-width: 320px;
-}
-
-.project-card img {
-  height: 40rem;
-  width: 20rem;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
-.project-card-content {
-  padding: 1.1rem;
-}
-
-.project-card a {
-  color: #4b7e54;
-  font-weight: 800;
 }
 
 .detail-image {
@@ -263,10 +219,6 @@ p {
 
   .site-nav {
     justify-content: flex-start;
-  }
-
-  .page {
-    padding-top: 2rem;
   }
 
   .hero-section {

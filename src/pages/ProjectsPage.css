@@ -1,0 +1,49 @@
+.projects-page .hero-section {
+  margin: 0;
+  background: #4b7e54;
+  padding: 2rem 6rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+    width: min(100%, 960px);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.project-card + .project-card {
+  border-top: 1px solid #d1d5db;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card img {
+  height: 26rem;
+  width: 26rem;
+  aspect-ratio: 16 / 10;
+  object-fit: fit;
+}
+
+.project-card-content {
+  padding: 1.1rem;
+}
+
+.project-card a {
+  color: #4b7e54;
+  font-weight: 800;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
