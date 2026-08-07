@@ -1,25 +1,16 @@
-.projects-page .hero-section {
-  margin: 0;
-  background: #4b7e54;
-  padding: 2rem 6rem;
-}
-
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: start;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fdfeff;
 }
 
 .project-card {
-    width: min(100%, 960px);
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 4rem;
     justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .project-card + .project-card {
@@ -29,10 +20,10 @@
 }
 
 .project-card img {
-  height: 26rem;
-  width: 26rem;
-  aspect-ratio: 16 / 10;
-  object-fit: fit;
+  height: auto;
+  width: 45%;
+  aspect-ratio: 10 / 10;
+  object-fit: cover;
 }
 
 .project-card-content {
@@ -46,4 +37,19 @@
 
 .project-card:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 720px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project-card img {
+    max-width: 100%;
+  }
 }

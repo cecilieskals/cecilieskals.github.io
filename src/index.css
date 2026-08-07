@@ -6,6 +6,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4b7e54;
 }
 
 * {
@@ -13,8 +14,8 @@
 }
 
 body {
-  margin: 0;
   min-width: 320px;
+  margin: 0 auto;
 }
 
 a {
@@ -37,9 +38,9 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
-  padding: 1.25rem 6rem;
-  background: #4b7e54;
+  width: min(100% - 2rem, 1120px);
+  padding: 1.25rem 0;
+  margin: 0 auto;
 }
 
 .brand {
@@ -66,6 +67,13 @@ textarea {
 .site-nav a:hover {
   color: #fdfeff;
   background: #214221;
+}
+
+.hero-section {
+  background: #4b7e54;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: min(100% - 2rem, 1120px);
 }
 
 .narrow {
@@ -224,5 +232,9 @@ p {
   .hero-section {
     min-height: auto;
     padding-top: 2rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
   }
 }

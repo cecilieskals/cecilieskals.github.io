@@ -22,7 +22,7 @@
     margin: 0; 
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: #dde2ec;
+    color: #fdfeff;
     font-weight: 400;
     font-size: 6rem;
     align-self: center;
@@ -34,6 +34,7 @@
     flex-direction: column;
     gap: 1rem;
     justify-content: space-between;
+    color: #fdfeff;
 }
 
 .contact-details {
@@ -56,6 +57,12 @@
   border-radius: 18px;
   overflow: hidden;
   display: block;
+}
+
+.bottom-section {
+  background: #fdfeff;
+  width: 100%;
+  min-height: 150px;
 }
 
 @media (max-width: 800px) {
