@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import projects from "../data/projects";
 import "./HomePage.css";
 
-const profileImage = `${import.meta.env.BASE_URL}photos/profile.svg`;
+const profileImage = `${import.meta.env.BASE_URL}photos/mig.svg`;
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);

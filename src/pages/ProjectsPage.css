@@ -7,7 +7,6 @@
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   align-items: start;
   justify-content: center;
   justify-items: center;
@@ -16,11 +15,17 @@
 }
 
 .project-card {
-    width: 100%;
+    width: min(100%, 960px);
     display: flex;
     align-items: center;
     gap: 4rem;
     justify-content: center;
+}
+
+.project-card + .project-card {
+  border-top: 1px solid #d1d5db;
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .project-card img {
