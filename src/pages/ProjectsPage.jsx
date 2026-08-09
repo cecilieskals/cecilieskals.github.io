@@ -4,7 +4,7 @@ import "./ProjectsPage.css";
 
 function ProjectsPage() {
   return (
-    <div className="projects-page">
+    <div className="project-page">
       <section className="hero-section">
         <h1>Mine projekter</h1>
       </section>
