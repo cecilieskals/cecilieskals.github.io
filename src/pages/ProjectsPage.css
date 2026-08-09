@@ -1,7 +1,14 @@
+.project-page .hero-section {
+  background-color: #4b7e54;
+  width: min(100% - 2rem, 1120px);
+  height: min(100% - 2rem, 1120px);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #fdfeff;
+  padding: 2rem;
 }
 
 .project-card {
@@ -40,6 +47,11 @@
 }
 
 @media (max-width: 720px) {
+.hero-section {
+    min-height: auto;
+    padding-top: 2rem;
+  }
+
   .project-card {
     flex-direction: column;
     text-align: center;
@@ -52,4 +64,5 @@
   .project-card img {
     max-width: 100%;
   }
+
 }

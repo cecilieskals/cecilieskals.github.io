@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 import projects from "../data/projects";
+import "./ProjectPage.css";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -24,7 +25,7 @@ function ProjectPage() {
         Tilbage til projekter
       </Link>
 
-      <img className="detail-image" src={project.image} alt="" />
+      <img className="detail-image" src={project.detailImage} alt="" />
       <p className="eyebrow">{project.year}</p>
       <h1>{project.title}</h1>
       <p className="lead">{project.description}</p>

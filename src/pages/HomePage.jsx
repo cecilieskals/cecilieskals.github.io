@@ -25,12 +25,12 @@ function HomePage() {
         <div className="image-container">
           <img src={profileImage} alt="Profilbillede" />
         </div>
-        <button className="hero-arrow" onClick={scrollToProjects} aria-label="Gå til projekter">
+        {/* <button className="hero-arrow" onClick={scrollToProjects} aria-label="Gå til projekter">
           ↓
-        </button>
+        </button> */}
       </section>
       <section className="section" id="section">
-        <h2>Projekter</h2>
+        {/* <h2>Projekter</h2> */}
         <div className="project-grid">
           {featuredProjects.map((project) => (
             <article className="project-card" key={project.slug}>
