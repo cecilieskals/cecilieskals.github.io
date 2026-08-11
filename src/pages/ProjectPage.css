@@ -1,4 +1,44 @@
-.detail-image {
-    display: block;
+.detail-page {
+    background-color: #fdfeff;
+}
+
+.detail-page .hero-section {
+    display: grid;
     margin: 0 auto;
+    background: #fdfeff;
+    gap: 2rem;   
+    padding: 2rem 0; 
+}
+
+.detail-page .hero-section h1 {
+    color: #214221;
+}
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdfeff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 12rem;
+}
+
+.slider-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-left, .button-right {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 4rem;
+}
+
+.button-left img, .button-right img {
+    width: 2rem;
+    height: 2rem;
 }

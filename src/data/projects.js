@@ -21,7 +21,7 @@ const projects = [
   },
   {
     slug: "case-study",
-    title: "Case study",
+    title: "Storyhangers",
     year: "2026",
     summary:
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
@@ -30,6 +30,11 @@ const projects = [
     tags: ["Design", "Frontend", "Proces"],
     image: `${import.meta.env.BASE_URL}photos/storyhangers.svg`,
     detailImage: `${import.meta.env.BASE_URL}photos/story-hangers-logo.svg`,
+    images: [
+      `${import.meta.env.BASE_URL}photos/storyhangers-detail1.svg`,
+      `${import.meta.env.BASE_URL}photos/storyhangers-detail3.svg`,
+      `${import.meta.env.BASE_URL}photos/storyhangers-detail4.svg`,
+    ],
     links: [
       {
         label: "Eksempel-link",
