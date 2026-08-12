@@ -7,6 +7,7 @@ function ProjectPage() {
   const { slug } = useParams();
   const project = projects.find((item) => item.slug === slug);
   const [currentImage, setCurrentImageIndex] = useState(0);
+  const [currentProcessImage, setCurrentProcessImageIndex] = useState(0);
 
   if (!project) {
     return (
@@ -36,41 +37,86 @@ function ProjectPage() {
         <p className="lead">{project.description}</p>
       </section>
 
-      <h2>Det færdige produkt</h2>
-      <div className="image-slider">
-        <button
-          className="button-left"
-          aria-label="Forrige billede"
-          onClick={() => {
-            setCurrentImageIndex(
-              (currentImage - 1 + project.images.length) %
-                project.images.length,
-            );
-          }}
-        >
-          <img src="/photos/left-arrow.svg" alt="Venstre pil" />
-        </button>
+      <section className="finished-product-section">
+        <h2>Det færdige produkt</h2>
+        <div className="image-slider-product">
+          <button
+            className="button-left"
+            aria-label="Forrige billede"
+            onClick={() => {
+              setCurrentImageIndex(
+                (currentImage - 1 + project.images.length) %
+                  project.images.length,
+              );
+            }}
+          >
+            <img src="/photos/left-arrow.svg" alt="Venstre pil" />
+          </button>
 
-        <img
-          src={project.images[currentImage]}
-          alt=""
-          className="slider-image"
-        />
+          <img
+            src={project.images[currentImage]}
+            alt=""
+            className="slider-image"
+          />
 
-        <button
-          className="button-right"
-          aria-label="Næste billede"
-          onClick={() => {
-            setCurrentImageIndex((currentImage + 1) % project.images.length);
-          }}
-        >
-          <img src="/photos/right-arrow.svg" alt="Højre pil" />
-        </button>
-      </div>
+          <button
+            className="button-right"
+            aria-label="Næste billede"
+            onClick={() => {
+              setCurrentImageIndex((currentImage + 1) % project.images.length);
+            }}
+          >
+            <img src="/photos/right-arrow.svg" alt="Højre pil" />
+          </button>
+        </div>
+        <div className="some-images-container">
+          {project.someImages?.map((img, index) => (
+            <img key={index} src={img} alt="" className="some-images" />
+          ))}
+        </div>
+      </section>
 
-      <h2>Processen bag</h2>
+      <section className="process-section">
+        <h2>Processen bag</h2>
+        <div className="image-slider-process">
+          <button
+            className="button-left"
+            aria-label="Forrige billede"
+            onClick={() => {
+              setCurrentProcessImageIndex(
+                (currentProcessImage - 1 + project.processImages?.length) %
+                  project.processImages?.length,
+              );
+            }}
+          >
+            <img src="/photos/left-arrow.svg" alt="Venstre pil" />
+          </button>
 
-      <ul className="tag-list">
+          <img
+            src={project.processImages?.[currentProcessImage]}
+            alt=""
+            className="slider-image"
+          />
+
+          <button
+            className="button-right"
+            aria-label="Næste billede"
+            onClick={() => {
+              setCurrentProcessImageIndex((currentProcessImage + 1) % project.processImages?.length);
+            }}
+          >
+            <img src="/photos/right-arrow.svg" alt="Højre pil" />
+          </button>
+        </div>
+    
+        {/* <div className="process-images-container">
+          {project.processImages?.map((img, index) => (
+            <img key={index} src={img} alt="" className="process-images" />
+          ))}
+        </div> */}
+      </section>
+
+      {/* <ul className="tag-list">
         {project.tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
@@ -88,7 +134,7 @@ function ProjectPage() {
             {link.label}
           </a>
         ))}
-      </div>
+      </div> */}
     </article>
   );
 }

@@ -1,33 +1,48 @@
 .detail-page {
-    background-color: #fdfeff;
-}
-
-.detail-page .hero-section {
     display: grid;
     margin: 0 auto;
+}
+
+.detail-page p {
+    color: #fdfeff;
+}
+
+.finished-product-section {
+    background-color: #fdfeff;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.some-images-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background: #fdfeff;
-    gap: 2rem;   
-    padding: 2rem 0; 
 }
 
-.detail-page .hero-section h1 {
-    color: #214221;
-}
-
-.image-slider {
+.image-slider-product {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    background-color: #fdfeff;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 12rem;
+    width: min(100%, 1120px);
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.slider-image {
-    width: 80%;
-    height: auto;
+.image-slider-product .slider-image {
+    height: 40rem;
+    width: 100%;
     display: block;
+    object-fit: contain;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,3 +57,59 @@
     width: 2rem;
     height: 2rem;
 }
+
+.process-section {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.process-section h2 {
+    color: #fdfeff;
+}
+
+
+.image-slider-process {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.image-slider-process .slider-image {
+    display: block;
+    object-fit: contain;
+    width: 40%;
+    height: auto;
+}
+
+/* .process-section {
+    display: grid;
+    gap: 2rem;   
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.process-images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: none;
+    width: min(100% - 2rem, 1120px);    
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.process-images {
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
