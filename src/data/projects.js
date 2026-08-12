@@ -2,7 +2,8 @@ const projects = [
   {
     slug: "web-app",
     title: "Gemly",
-    summary: "En fiktiv applikation til at gemme og organisere steder at besøge under din næste rejse.",
+    summary:
+      "En fiktiv applikation til at gemme og organisere steder at besøge under din næste rejse.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["React", "Vite", "GitHub Pages"],
@@ -62,16 +63,18 @@ const projects = [
   {
     slug: "exam-project",
     title: "Spilcaféen",
-    summary:
-      "Optimeret brugeroplevelse og design af Spilcaféens hjemmeside.",
+    summary: "Optimeret brugeroplevelse og design af Spilcaféens hjemmeside.",
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Design", "Frontend", "Proces"],
     image: `${import.meta.env.BASE_URL}photos/spilcafe.svg`,
     images: [
-      `${import.meta.env.BASE_URL}photos/storyhangers-detail1.svg`,
-      `${import.meta.env.BASE_URL}photos/storyhangers-detail3.svg`,
-      `${import.meta.env.BASE_URL}photos/storyhangers-detail4.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail1.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail2.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail3.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail6.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail4.svg`,
+      `${import.meta.env.BASE_URL}photos/spilcafe-detail5.svg`,
     ],
     links: [
       {
