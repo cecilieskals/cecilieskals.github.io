@@ -1,21 +1,31 @@
-function AboutPage() {
-  return (
-    <div className="page narrow">
-      <p className="eyebrow">Om mig</p>
-      <h1>Hvem er jeg?</h1>
-      <p className="lead">
-        Skriv kort om din faglige retning, dine interesser og hvad du gerne vil
-        blive bedre til. Hold teksten konkret og personlig.
-      </p>
+import { Link, useParams } from "react-router";
+import about from "../data/about";
+import "./AboutPage.css";
 
-      <section className="info-list" aria-label="Om mig detaljer">
-        <div>
-          <h2>Jeg arbejder med</h2>
-          <p>React, HTML, CSS, JavaScript, designproces og digitale produkter.</p>
+function AboutPage() {
+  const { id } = useParams();
+
+  return (
+    <div className="about-page">
+      <section className="hero-section">
+        <h1>Hvem er jeg?</h1>
+      </section>
+
+      <section className="about-section">
+        <div className="about-info">
+          <h2>Hvad jeg elsker at lave</h2>
+          <p>UX/UI Design, Mockups, Prototyper, Frontend design.</p>
+          <h2>Værktøjer jeg arbejder med</h2>
+          <p>
+            React, HTML, CSS, JavaScript, GitHub, Figma, Adobe Illustrator,
+            Adobe Photoshop.
+          </p>
         </div>
-        <div>
-          <h2>Jeg er nysgerrig på</h2>
-          <p>Brugeroplevelser, visuel identitet og hvordan kode bliver til noget brugbart.</p>
+
+        <div className="image-collage">
+          {about.aboutImages.map((img, index) => (
+            <img key={index} src={img} alt="" className="about-image" />
+          ))}
         </div>
       </section>
     </div>
