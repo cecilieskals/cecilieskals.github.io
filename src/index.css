@@ -77,13 +77,6 @@ textarea {
   width: min(100% - 2rem, 1120px);
 }
 
-.narrow {
-  width: 90%;
-  max-width: 720px;
-  background-color: #fdfeff;
-  margin: 0 auto;
-}
-
 .intro {
   max-width: 720px;
 }
@@ -163,7 +156,7 @@ p {
 .back-link {
   display: inline-flex;
   margin-bottom: 1.5rem;
-  color: #5b21b6;
+  color: #214221;
   font-weight: 800;
 }
 
@@ -211,7 +204,7 @@ p {
 }
 
 .contact-list a {
-  color: #5b21b6;
+  color: #fdfeff;
   font-weight: 800;
 }
 
