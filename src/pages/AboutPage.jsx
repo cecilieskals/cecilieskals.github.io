@@ -23,7 +23,7 @@ function AboutPage() {
             kunder, hvilket har styrket mine kommunikationsevner og evnen til at
             forstå forskellige perspektiver. Jeg er altid på udkig efter nye
             udfordringer og muligheder for at udvikle mine færdigheder inden for
-            UX-UI design.
+            digitalt design, branding og visuelle identiteter.
           </p>
           <section className="info-list">
             <div className="info-card">

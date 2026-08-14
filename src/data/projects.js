@@ -14,6 +14,50 @@ const projects = [
       `${import.meta.env.BASE_URL}photos/gemly-detail4.svg`,
       `${import.meta.env.BASE_URL}photos/gemly-detail5.svg`,
     ],
+    doubleDiamond: [
+      {
+        title: "Discover",
+        text: "Brainstorm emne - Undersøgt målgruppe - HMW - Card sorting",
+      },
+      {
+        title: "Define",
+        text: "Flows - VPC - User needs og user stories - OOUX - Definere målgruppe - Koncept",
+      },
+      {
+        title: "Develop",
+        text: "Brugertest af koncept - Lo-fi skitser af layout - Skitser i Figma - Test af Figma skitseret prototype - Heuristisk evaluering",
+      },
+      {
+        title: "Deliver",
+        text: "Figma prototype - Programmering - Finpudsning af løsning",
+      },
+    ],
+    process: [
+      {
+        title: "Moodboard",
+        description:
+          "Moodboardet blev lavet for at finde en visuel retning for appen.",
+        image: `${import.meta.env.BASE_URL}photos/moodboard-gemly.png`,
+      },
+      {
+        title: "Brugertests",
+        description:
+          "Vi lavede løbende flere forskellige slags tests på målgruppen. Dette gav os mulighed for at få feedback på vores design og funktionalitet, og vi kunne justere og forbedre appen baseret på brugernes input.",
+        image: `${import.meta.env.BASE_URL}photos/brugertests-gemly.png`,
+      },
+      {
+        title: "Wireframes",
+        description:
+          "Vi udarbejdede wireframes for at planlægge layoutet af appen. Dette gav os mulighed for at teste og iterere på designet, inden vi gik videre med den endelige løsning.",
+        image: `${import.meta.env.BASE_URL}photos/wireframes-gemly.png`,
+      },
+      {
+        title: "Styletile",
+        description:
+          "Vi lavede et styletile for at definere farver, typografi og andre designelementer til appen. Heri ligger også en visuel retning, som vi har fulgt igennem hele designprocessen og skaber en rød tråd.",
+        image: `${import.meta.env.BASE_URL}photos/styletile-gemly.png`,
+      },
+    ],
     links: [
       {
         label: "Github Pages",
@@ -44,16 +88,36 @@ const projects = [
       `${import.meta.env.BASE_URL}photos/storyhangers-detail4.svg`,
     ],
     someImages: [
-      `${import.meta.env.BASE_URL}photos/some-storyhangers1.svg`,
-      `${import.meta.env.BASE_URL}photos/some-storyhangers2.svg`,
-      `${import.meta.env.BASE_URL}photos/some-storyhangers3.svg`,
-      `${import.meta.env.BASE_URL}photos/some-storyhangers4.svg`,
+      `${import.meta.env.BASE_URL}photos/some-storyhangers1.png`,
+      `${import.meta.env.BASE_URL}photos/some-storyhangers2.png`,
+      `${import.meta.env.BASE_URL}photos/some-storyhangers3.png`,
+      `${import.meta.env.BASE_URL}photos/some-storyhangers4.png`,
     ],
-    processImages: [
-      `${import.meta.env.BASE_URL}photos/moodboard-storyhangers.png`,
-      `${import.meta.env.BASE_URL}photos/design-inspo-storyhangers.png`,
-      `${import.meta.env.BASE_URL}photos/wireframes-storyhangers.png`,
-      `${import.meta.env.BASE_URL}photos/styletile-storyhangers.png`,
+    process: [
+      {
+        title: "Moodboard",
+        description:
+          "Moodboardet blev lavet for at finde en visuel retning for webshoppen.",
+        image: `${import.meta.env.BASE_URL}photos/moodboard-storyhangers.png`,
+      },
+      {
+        title: "Brugerundersøgelse",
+        description:
+          "Vi lavede løbende flere forskellige slags tests på målgruppen. Dette gav os mulighed for at få feedback på vores design og funktionalitet, og vi kunne justere og forbedre appen baseret på brugernes input.",
+        image: `${import.meta.env.BASE_URL}photos/brugertest-storyhangers.png`,
+      },
+      {
+        title: "Wireframes",
+        description:
+          "Vi udarbejdede wireframes for at planlægge layoutet af webshoppen. Dette gav os mulighed for at teste og iterere på designet, inden vi gik videre med den endelige løsning.",
+        image: `${import.meta.env.BASE_URL}photos/wireframes-storyhangers.png`,
+      },
+      {
+        title: "Styletile",
+        description:
+          "Vi lavede et styletile for at definere farver, typografi og andre designelementer til webshoppen. Heri ligger også en visuel retning, som vi har fulgt igennem hele designprocessen og skaber en rød tråd.",
+        image: `${import.meta.env.BASE_URL}photos/styletile-storyhangers.png`,
+      },
     ],
     links: [
       {
@@ -73,9 +137,9 @@ const projects = [
   {
     slug: "exam-project",
     title: "Spilcaféen",
-    summary: "Optimeret brugeroplevelse og design af Spilcaféens hjemmeside.",
+    summary: "Re-design af Spilcaféens hjemmeside.",
     description:
-      "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
+      "Re-design af Spilcaféens hjemmeside med fokus på at forbedre brugeroplevelsen og gøre det nemmere for kunder at finde information om spillene.",
     tags: ["Design", "Frontend", "Proces"],
     image: `${import.meta.env.BASE_URL}photos/spilcafe.svg`,
     images: [
