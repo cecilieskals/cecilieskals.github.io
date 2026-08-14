@@ -35,6 +35,19 @@ function ProjectPage() {
         {/* <img className="detail-image" src={project.detailImage} alt="" /> */}
         <h1>{project.title}</h1>
         <p className="lead">{project.description}</p>
+        <div className="actions">
+          {project.links.map((link) => (
+            <a
+              className="button secondary"
+              href={link.href}
+              key={link.href}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </section>
 
       <section className="finished-product-section">
@@ -102,13 +115,15 @@ function ProjectPage() {
             className="button-right"
             aria-label="Næste billede"
             onClick={() => {
-              setCurrentProcessImageIndex((currentProcessImage + 1) % project.processImages?.length);
+              setCurrentProcessImageIndex(
+                (currentProcessImage + 1) % project.processImages?.length,
+              );
             }}
           >
             <img src="/photos/right-arrow.svg" alt="Højre pil" />
           </button>
         </div>
-    
+
         {/* <div className="process-images-container">
           {project.processImages?.map((img, index) => (
             <img key={index} src={img} alt="" className="process-images" />
@@ -116,24 +131,11 @@ function ProjectPage() {
         </div> */}
       </section>
 
-       <ul className="tag-list">
+      {/* <ul className="tag-list">
         {project.tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
-      </ul>
-      <div className="actions">
-        {project.links.map((link) => (
-          <a
-            className="button secondary"
-            href={link.href}
-            key={link.href}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {link.label}
-          </a>
-        ))}
-      </div> 
+      </ul> */}
     </article>
   );
 }
