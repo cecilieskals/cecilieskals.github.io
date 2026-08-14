@@ -34,6 +34,11 @@ function ProjectPage() {
         </Link>
         {/* <img className="detail-image" src={project.detailImage} alt="" /> */}
         <h1>{project.title}</h1>
+        {/* <p className="lead">{project.description}</p> */}
+      </section>
+
+      <section className="finished-product-section">
+        <h2>Det færdige produkt</h2>
         <p className="lead">{project.description}</p>
         <div className="actions">
           {project.links.map((link) => (
@@ -48,10 +53,6 @@ function ProjectPage() {
             </a>
           ))}
         </div>
-      </section>
-
-      <section className="finished-product-section">
-        <h2>Det færdige produkt</h2>
         <div className="image-slider-product">
           <button
             className="button-left"
@@ -91,7 +92,30 @@ function ProjectPage() {
 
       <section className="process-section">
         <h2>Processen bag</h2>
-        <div className="image-slider-process">
+        {/* <p className="text">Projektet er udarbejdet efter Double Diamond modellen.</p>
+        <div className="double-diamond-container">
+          {project.doubleDiamond?.map((step, index) => (
+            <div key={index} className="process-card">
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+          ))}
+        </div> */}
+        <div className="process-container">
+          {project.process?.map((step) => (
+            <article className="process-card" key={step.title}>
+              <img src={step.image} alt="" className="process-image" />
+
+              <div className="process-text">
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* <div className="image-slider-process">
           <button
             className="button-left"
             aria-label="Forrige billede"
@@ -122,14 +146,13 @@ function ProjectPage() {
           >
             <img src="/photos/right-arrow.svg" alt="Højre pil" />
           </button>
-        </div>
+        </div> */}
 
-        {/* <div className="process-images-container">
+      {/* <div className="process-images-container">
           {project.processImages?.map((img, index) => (
             <img key={index} src={img} alt="" className="process-images" />
           ))}
         </div> */}
-      </section>
 
       {/* <ul className="tag-list">
         {project.tags.map((tag) => (

@@ -35,7 +35,7 @@ textarea {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   width: min(100% - 2rem, 1120px);
   padding: 1.25rem 0;
@@ -132,6 +132,8 @@ p {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -149,9 +151,9 @@ p {
 }
 
 .button.secondary {
-  color: #fdfeff;
+  color: #214221;
   background: transparent;
-  border-color: #fdfeff;
+  border-color: #214221;
 }
 
 .back-link {

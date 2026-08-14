@@ -16,11 +16,10 @@ function HomePage() {
     <div className="home-page">
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Hej, jeg hedder Cecilie.</h1>
-          <p className="hero-text">
-            Jeg arbejder med frontend, design og digitale produkter. Her samler
-            jeg projekter, proces og det, jeg lærer undervejs.
-          </p>
+          <h3 className="hero-text">
+            Jeg er Cecilie Thykjær Skals og jeg arbejder med
+          </h3>
+          <h1>design af digitale produkter</h1>
         </div>
         <div className="image-container">
           <img src={profileImage} alt="Profilbillede" />

@@ -17,11 +17,11 @@ function ProjectsPage() {
               <p className="eyebrow">{project.year}</p>
               <h2>{project.title}</h2>
               <p>{project.summary}</p>
-              <ul className="tag-list">
+              {/* <ul className="tag-list">
                 {project.tags.map((tag) => (
                   <li key={tag}>{tag}</li>
                 ))}
-              </ul>
+              </ul> */}
               <Link to={`/projects/${project.slug}`}>Se projekt</Link>
             </div>
           </article>

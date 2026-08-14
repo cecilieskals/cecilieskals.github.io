@@ -3,12 +3,12 @@ import { NavLink } from "react-router";
 function Navbar() {
   return (
     <header className="site-header">
-      <NavLink className="brand" to="/">
+      {/* <NavLink className="brand" to="/">
         <img
           src={`${import.meta.env.BASE_URL}favicon.svg`}
           alt="Logo"
         />
-     </NavLink>
+     </NavLink> */}
 
       <nav className="site-nav" aria-label="Primær navigation">
         <NavLink to="/" end>
