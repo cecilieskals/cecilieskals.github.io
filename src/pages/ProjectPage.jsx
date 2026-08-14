@@ -116,12 +116,11 @@ function ProjectPage() {
         </div> */}
       </section>
 
-      {/* <ul className="tag-list">
+       <ul className="tag-list">
         {project.tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
       </ul>
-
       <div className="actions">
         {project.links.map((link) => (
           <a
@@ -134,7 +133,7 @@ function ProjectPage() {
             {link.label}
           </a>
         ))}
-      </div> */}
+      </div> 
     </article>
   );
 }

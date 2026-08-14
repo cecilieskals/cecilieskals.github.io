@@ -1,10 +1,11 @@
 .about-page {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .about-section {
@@ -12,15 +13,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
-    height: 60rem;
+    height: 100%;
     margin: 0 auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-info {
+    display: grid;
     margin: 0 auto;
-    width: 100%;
-    padding: 10rem;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-collage {
@@ -32,7 +38,7 @@
     align-items: center;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -50%);
+    transform: translate(-60%, -90%);
 }
 
 .about-image {
@@ -79,4 +85,12 @@
     top: 14rem;
     left: 36rem;
     transform: rotate(-4deg);
+}
+
+.info-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
 }

@@ -3,9 +3,9 @@ const projects = [
     slug: "web-app",
     title: "Gemly",
     summary:
-      "En fiktiv applikation til at gemme og organisere steder at besøge under din næste rejse.",
+      "En applikation for skjulte perler.",
     description:
-      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+      "En app til dig, der ønsker at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
     tags: ["React", "Vite", "GitHub Pages"],
     image: `${import.meta.env.BASE_URL}photos/gemly1.svg`,
     images: [
@@ -30,9 +30,9 @@ const projects = [
     slug: "costumer-experience",
     title: "Storyhangers",
     summary:
-      "En webshop til en fiktiv tøj-retailer, der sælger tøj fra flere brands.",
+      "En webshop til en fiktiv tøj-retailer.",
     description:
-      "Opgavebeskrivelsen var at udvikle en webshop til en fiktiv tøj-retailer, der sælger tøj fra flere brands. Vores fortolkning var en premuim secondhand-tøj webshop. ",
+      "Konceptudvikling af en webshop til en fiktiv retail tøjforhandler. Vores fortolkning var en premuim secondhand-tøj webshop. ",
     tags: ["Design", "Frontend", "Proces"],
     image: `${import.meta.env.BASE_URL}photos/storyhangers.svg`,
     // detailImage: `${import.meta.env.BASE_URL}photos/story-hangers-logo.svg`,

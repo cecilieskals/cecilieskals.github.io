@@ -4,8 +4,11 @@ function Navbar() {
   return (
     <header className="site-header">
       <NavLink className="brand" to="/">
-        PORTFOLIO
-      </NavLink>
+        <img
+          src={`${import.meta.env.BASE_URL}favicon.svg`}
+          alt="Logo"
+        />
+     </NavLink>
 
       <nav className="site-nav" aria-label="Primær navigation">
         <NavLink to="/" end>
