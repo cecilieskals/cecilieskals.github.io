@@ -149,8 +149,9 @@ p {
 }
 
 .button.secondary {
-  color: #111827;
+  color: #fdfeff;
   background: transparent;
+  border-color: #fdfeff;
 }
 
 .back-link {
