@@ -1,20 +1,20 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
-import "./ProjectsPage.css";
+import styles from "./ProjectsPage.module.css";
 
 function ProjectsPage() {
   return (
-    <div className="project-page">
-      <section className="hero-section">
+    <div className={styles.projectsPage}>
+      <section className={styles.heroSection}>
         <h1>Mine projekter</h1>
       </section>
 
-      <section className="project-grid" aria-label="Projektliste">
+      <section className={styles.projectGrid} aria-label="Projektliste">
         {projects.map((project) => (
-          <article className="project-card" key={project.slug}>
+          <article className={styles.projectCard} key={project.slug}>
             <img src={project.image} alt={`Preview af ${project.title}`} />
-            <div className="project-card-content">
-              <p className="eyebrow">{project.year}</p>
+            <div className={styles.projectCardContent}>
+              <p className={styles.eyebrow}>{project.year}</p>
               <h2>{project.title}</h2>
               <p>{project.summary}</p>
               {/* <ul className="tag-list">

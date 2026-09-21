@@ -1,0 +1,226 @@
+.projectPage {
+  display: grid;
+  margin: 0 auto;
+}
+
+.page {
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+.heroSection {
+  background-color: #4b7e54;
+  width: min(100% - 2rem, 1120px);
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  color: #214221;
+  font-weight: 800;
+}
+
+.lead {
+  color: #214221;
+  line-height: 1.65;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #214221;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 1px solid #111827;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #111827;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.secondaryButton {
+  color: #214221;
+  background: transparent;
+  border-color: #214221;
+}
+
+.finishedProductSection {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem;
+  background-color: #fdfeff;
+}
+
+.finishedProductSection h2 {
+  justify-self: center;
+  color: #214221;
+}
+
+.finishedProductSection p {
+  color: #214221;
+  justify-self: center;
+  text-align: center;
+  max-width: 500px;
+}
+
+.imageSliderProduct {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.sliderImage {
+  height: 40rem;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sliderButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 4rem;
+}
+
+.sliderButton img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.someImagesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.someImage {
+  width: 100%;
+  height: auto;
+}
+
+.processSection {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  padding: 4rem;
+  background-color: #fdfeff;
+}
+
+.processSection h2 {
+  justify-self: center;
+  color: #214221;
+}
+
+.processSection p {
+  color: #214221;
+}
+
+.processContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.processCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.processCard:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.processImage {
+  height: 20rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.processText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  width: 30rem;
+}
+
+.processText h3 {
+  color: #214221;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .processCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .processCard:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .finishedProductSection,
+  .processSection {
+    padding: 2rem 1rem;
+  }
+
+  .imageSliderProduct {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sliderImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .someImagesContainer {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .processText {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}

@@ -1,41 +1,36 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
-import "./HomePage.css";
+import styles from "./HomePage.module.css";
 
 const profileImage = `${import.meta.env.BASE_URL}photos/mig.svg`;
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
-  const scrollToProjects = () => {
-    document
-      .getElementById("section")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
-    <div className="home-page">
-      <section className="hero-section">
-        <div className="hero-content">
-          <h3 className="hero-text">
+    <div className={styles.homePage}>
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <h3 className={styles.heroText}>
             Jeg er Cecilie Thykjær Skals og jeg arbejder med
           </h3>
           <h1>design af digitale produkter</h1>
         </div>
-        <div className="image-container">
+        <div className={styles.imageContainer}>
           <img src={profileImage} alt="Profilbillede" />
         </div>
         {/* <button className="hero-arrow" onClick={scrollToProjects} aria-label="Gå til projekter">
           ↓
         </button> */}
       </section>
-      <section className="section" id="section">
+      <section className={styles.projectsSection} id="section">
         {/* <h2>Projekter</h2> */}
-        <div className="project-grid">
+        <div className={styles.projectGrid}>
           {featuredProjects.map((project) => (
-            <article className="project-card" key={project.slug}>
+            <article className={styles.projectCard} key={project.slug}>
               <img src={project.image} alt={`Preview af ${project.title}`} />
-              <div className="project-card-content">
-                <p className="eyebrow">{project.year}</p>
+              <div className={styles.projectCardContent}>
+                <p className={styles.eyebrow}>{project.year}</p>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
                 <Link to={`/projects/${project.slug}`}>Læs mere</Link>

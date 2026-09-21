@@ -1,18 +1,16 @@
-import { Link, useParams } from "react-router";
+import { Link } from "react-router";
 import about from "../data/about";
-import "./AboutPage.css";
+import styles from "./AboutPage.module.css";
 
 function AboutPage() {
-  const { id } = useParams();
-
   return (
-    <div className="about-page">
-      <section className="hero-section">
+    <header className={styles.aboutPage}>
+      <section className={styles.aboutHeader}>
         <h1>Hvem er jeg?</h1>
       </section>
 
-      <section className="about-section">
-        <div className="about-info">
+      <section className={styles.aboutContent}>
+        <div className={styles.aboutText}>
           <p>
             Jeg er Cecilie, en UX-UI designer under uddannelse. Jeg elsker at
             teste grænser af, prøve krudt med nye ting og løse problemer. Jeg
@@ -25,12 +23,12 @@ function AboutPage() {
             udfordringer og muligheder for at udvikle mine færdigheder inden for
             digitalt design, branding og visuelle identiteter.
           </p>
-          <section className="info-list">
-            <div className="info-card">
+          <section className={styles.infoList}>
+            <div className={styles.infoCard}>
               <h2>Hvad jeg elsker at lave</h2>
               <p>UX/UI Design, Mockups, Prototyper, Frontend design.</p>
             </div>
-            <div className="info-card">
+            <div className={styles.infoCard}>
               <h2>Værktøjer jeg arbejder med</h2>
               <p>
                 React, HTML, CSS, JavaScript, GitHub, Figma, Adobe Illustrator,
@@ -40,13 +38,13 @@ function AboutPage() {
           </section>
         </div>
 
-        <div className="image-collage">
+        <div className={styles.imageCollage}>
           {about.aboutImages.map((img, index) => (
-            <img key={index} src={img} alt="" className="about-image" />
+            <img key={index} src={img} alt="" className={styles.aboutImage} />
           ))}
         </div>
       </section>
-    </div>
+    </header>
   );
 }
 
