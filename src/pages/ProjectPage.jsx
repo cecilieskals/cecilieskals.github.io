@@ -1,21 +1,20 @@
 import { Link, useParams } from "react-router";
 import projects from "../data/projects";
-import "./ProjectPage.css";
 import { useState } from "react";
+import styles from "./ProjectPage.module.css";
 
 function ProjectPage() {
   const { slug } = useParams();
   const project = projects.find((item) => item.slug === slug);
   const [currentImage, setCurrentImageIndex] = useState(0);
-  const [currentProcessImage, setCurrentProcessImageIndex] = useState(0);
 
   if (!project) {
     return (
-      <div className="page narrow">
-        <p className="eyebrow">404</p>
+      <div className={`${styles.page} ${styles.narrow}`}>
+        <p className={styles.eyebrow}>404</p>
         <h1>Projektet blev ikke fundet</h1>
-        <p>Det projekt findes ikke i listen endnu.</p>
-        <Link className="button" to="/projects">
+        <p className={styles.lead}>Det projekt findes ikke i listen endnu.</p>
+        <Link className={styles.button} to="/projects">
           Tilbage til projekter
         </Link>
       </div>
@@ -23,13 +22,13 @@ function ProjectPage() {
   }
 
   return (
-    <article className="detail-page">
+    <article className={styles.projectPage}>
       {/* <section className="hero-section">
         <h1>{project.title}</h1>
       </section> */}
 
-      <section className="hero-section">
-        <Link className="back-link" to="/projects">
+      <section className={styles.heroSection}>
+        <Link className={styles.backLink} to="/projects">
           Tilbage til projekter
         </Link>
         {/* <img className="detail-image" src={project.detailImage} alt="" /> */}
@@ -37,13 +36,13 @@ function ProjectPage() {
         {/* <p className="lead">{project.description}</p> */}
       </section>
 
-      <section className="finished-product-section">
+      <section className={styles.finishedProductSection}>
         <h2>Det færdige produkt</h2>
-        <p className="lead">{project.description}</p>
-        <div className="actions">
+        <p className={styles.lead}>{project.description}</p>
+        <div className={styles.actions}>
           {project.links.map((link) => (
             <a
-              className="button secondary"
+              className={`${styles.button} ${styles.secondaryButton}`}
               href={link.href}
               key={link.href}
               rel="noreferrer"
@@ -53,9 +52,9 @@ function ProjectPage() {
             </a>
           ))}
         </div>
-        <div className="image-slider-product">
+        <div className={styles.imageSliderProduct}>
           <button
-            className="button-left"
+            className={styles.sliderButton}
             aria-label="Forrige billede"
             onClick={() => {
               setCurrentImageIndex(
@@ -70,11 +69,11 @@ function ProjectPage() {
           <img
             src={project.images[currentImage]}
             alt=""
-            className="slider-image"
+            className={styles.sliderImage}
           />
 
           <button
-            className="button-right"
+            className={styles.sliderButton}
             aria-label="Næste billede"
             onClick={() => {
               setCurrentImageIndex((currentImage + 1) % project.images.length);
@@ -83,14 +82,14 @@ function ProjectPage() {
             <img src="/photos/right-arrow.svg" alt="Højre pil" />
           </button>
         </div>
-        <div className="some-images-container">
+        <div className={styles.someImagesContainer}>
           {project.someImages?.map((img, index) => (
-            <img key={index} src={img} alt="" className="some-images" />
+            <img key={index} src={img} alt="" className={styles.someImage} />
           ))}
         </div>
       </section>
 
-      <section className="process-section">
+      <section className={styles.processSection}>
         <h2>Processen bag</h2>
         {/* <p className="text">Projektet er udarbejdet efter Double Diamond modellen.</p>
         <div className="double-diamond-container">
@@ -101,12 +100,12 @@ function ProjectPage() {
             </div>
           ))}
         </div> */}
-        <div className="process-container">
+        <div className={styles.processContainer}>
           {project.process?.map((step) => (
-            <article className="process-card" key={step.title}>
-              <img src={step.image} alt="" className="process-image" />
+            <article className={styles.processCard} key={step.title}>
+              <img src={step.image} alt="" className={styles.processImage} />
 
-              <div className="process-text">
+              <div className={styles.processText}>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
               </div>

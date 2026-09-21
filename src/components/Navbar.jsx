@@ -1,8 +1,9 @@
 import { NavLink } from "react-router";
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <header className="site-header">
+    <header className={styles.header}>
       {/* <NavLink className="brand" to="/">
         <img
           src={`${import.meta.env.BASE_URL}favicon.svg`}
@@ -10,13 +11,48 @@ function Navbar() {
         />
      </NavLink> */}
 
-      <nav className="site-nav" aria-label="Primær navigation">
-        <NavLink to="/" end>
+      <nav className={styles.nav} aria-label="Primær navigation">
+        <NavLink
+          className={({ isActive }) =>
+            [styles.link, isActive ? styles.active : ""]
+              .filter(Boolean)
+              .join(" ")
+          }
+          to="/"
+          end
+        >
           Forside
         </NavLink>
-        <NavLink to="/projects">Projekter</NavLink>
-        <NavLink to="/about">Om mig</NavLink>
-        <NavLink to="/contact">Kontakt</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            [styles.link, isActive ? styles.active : ""]
+              .filter(Boolean)
+              .join(" ")
+          }
+          to="/projects"
+        >
+          Projekter
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            [styles.link, isActive ? styles.active : ""]
+              .filter(Boolean)
+              .join(" ")
+          }
+          to="/about"
+        >
+          Om mig
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            [styles.link, isActive ? styles.active : ""]
+              .filter(Boolean)
+              .join(" ")
+          }
+          to="/contact"
+        >
+          Kontakt
+        </NavLink>
       </nav>
     </header>
   );

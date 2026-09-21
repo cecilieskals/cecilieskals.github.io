@@ -1,0 +1,35 @@
+.notFoundPage {
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #214221;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.lead {
+  color: #214221;
+  line-height: 1.65;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 1px solid #111827;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #111827;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
