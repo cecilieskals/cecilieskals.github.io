@@ -4,10 +4,10 @@ import styles from "./AboutPage.module.css";
 
 function AboutPage() {
   return (
-    <header className={styles.aboutPage}>
-      <section className={styles.aboutHeader}>
+    <section className={styles.aboutPage}>
+      <div className={styles.aboutHeader}>
         <h1>Hvem er jeg?</h1>
-      </section>
+      </div>
 
       <section className={styles.aboutContent}>
         <div className={styles.aboutText}>
@@ -25,11 +25,11 @@ function AboutPage() {
           </p>
           <section className={styles.infoList}>
             <div className={styles.infoCard}>
-              <h2>Hvad jeg elsker at lave</h2>
+              <h3>Hvad jeg elsker at lave</h3>
               <p>UX/UI Design, Mockups, Prototyper, Frontend design.</p>
             </div>
             <div className={styles.infoCard}>
-              <h2>Værktøjer jeg arbejder med</h2>
+              <h3>Værktøjer jeg arbejder med</h3>
               <p>
                 React, HTML, CSS, JavaScript, GitHub, Figma, Adobe Illustrator,
                 Adobe Photoshop.
@@ -44,7 +44,7 @@ function AboutPage() {
           ))}
         </div>
       </section>
-    </header>
+    </section>
   );
 }
 

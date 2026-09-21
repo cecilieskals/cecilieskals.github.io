@@ -1,6 +1,6 @@
 .footer {
   margin-top: auto;
-  background: #2f2d2c;
+  background: #333333;
   color: #f7f5f2;
 }
 
@@ -22,23 +22,22 @@
 .heading {
   margin: 0;
   color: #f7f5f2;
-  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-size: clamp(4rem, 7vw, 7rem);
   line-height: 0.9;
   letter-spacing: 0;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: "Arial Black", "Impact", sans-serif;
+  text-shadow: none;
 }
 
 .details {
   display: grid;
-  gap: 1rem;
   padding-top: 0.5rem;
 }
 
 .item {
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid rgba(247, 245, 242, 0.45);
+  padding: 0.85rem;
+  border-top: 1px solid rgba(247, 245, 242, 0.45);
 }
 
 .label {
