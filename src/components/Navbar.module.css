@@ -18,15 +18,14 @@
 
 .link {
   border-radius: 999px;
-  color: #fdfeff;
+  color: #333333;
   padding: 0.55rem 0.8rem;
   text-decoration: none;
 }
 
 .active,
 .link:hover {
-  color: #fdfeff;
-  background: #214221;
+  border: 1px solid #D381B1;
 }
 
 @media (max-width: 720px) {
