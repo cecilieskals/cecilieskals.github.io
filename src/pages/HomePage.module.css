@@ -3,7 +3,6 @@
 }
 
 .heroSection {
-  background: #4b7e54;
   padding: 1rem 0;
   margin: 0 auto;
   width: min(100% - 2rem, 1120px);
@@ -23,7 +22,7 @@
 }
 
 .heroText {
-  color: #fdfeff;
+  color: #333333;
 }
 
 .eyebrow {

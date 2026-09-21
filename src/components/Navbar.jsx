@@ -43,16 +43,9 @@ function Navbar() {
         >
           Om mig
         </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            [styles.link, isActive ? styles.active : ""]
-              .filter(Boolean)
-              .join(" ")
-          }
-          to="/contact"
-        >
+        <a className={styles.link} href="#kontakt">
           Kontakt
-        </NavLink>
+        </a>
       </nav>
     </header>
   );
