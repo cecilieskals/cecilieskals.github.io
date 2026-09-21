@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProjectPage from "./pages/ProjectPage";
@@ -22,6 +23,8 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
+
+      <Footer />
     </>
   );
 }
