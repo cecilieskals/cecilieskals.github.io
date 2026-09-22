@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -19,7 +18,6 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:slug" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

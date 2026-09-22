@@ -2,7 +2,8 @@ const projects = [
   {
     slug: "web-app",
     title: "Gemly",
-    summary: "En applikation for skjulte perler.",
+    summary:
+      "En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer.",
     description:
       "En app til dig, der ønsker at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
     tags: ["React", "Vite", "GitHub Pages"],
@@ -76,7 +77,7 @@ const projects = [
   {
     slug: "costumer-experience",
     title: "Storyhangers",
-    summary: "En webshop til en fiktiv tøj-retailer.",
+    summary: "En webshop til en fiktiv tøj-retailer. Story Hangers er til dig, der ønsker at købe secondhand tøj af høj kvalitet. ",
     description:
       "Konceptudvikling af en webshop til en fiktiv retail tøjforhandler. Vores fortolkning var en premuim secondhand-tøj webshop. ",
     tags: ["Design", "Frontend", "Proces"],

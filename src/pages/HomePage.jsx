@@ -1,20 +1,21 @@
 import { Link } from "react-router";
+import ToolsSection from "../components/ToolsSection";
 import projects from "../data/projects";
 import styles from "./HomePage.module.css";
 
 const profileImage = `${import.meta.env.BASE_URL}photos/mig.svg`;
 
 function HomePage() {
-  const featuredProjects = projects.slice(0, 2);
+  const featuredProjects = projects.slice(0, 3);
 
   return (
     <div className={styles.homePage}>
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h3 className={styles.heroText}>
-            Jeg er Cecilie Thykjær Skals og jeg arbejder med
-          </h3>
-          <h1>design af digitale produkter</h1>
+          <h1 className={styles.heroTitle}>Cecilie Skals</h1>
+          <p className={styles.heroText}>
+           Jeg arbejder med design af digitale produkter
+          </p>
         </div>
         <div className={styles.imageContainer}>
           <img src={profileImage} alt="Profilbillede" />
@@ -23,8 +24,16 @@ function HomePage() {
           ↓
         </button> */}
       </section>
+
       <section className={styles.projectsSection} id="section">
-        {/* <h2>Projekter</h2> */}
+        <div className={styles.sectionHeader}>
+          <div className={styles.divider} />
+          <div className={styles.sectionTitleRow}>
+            <h2 className={styles.sectionHeading}>Mine projekter</h2>
+          </div>
+          <div className={styles.divider} />
+        </div>
+
         <div className={styles.projectGrid}>
           {featuredProjects.map((project) => (
             <article className={styles.projectCard} key={project.slug}>
@@ -38,6 +47,13 @@ function HomePage() {
             </article>
           ))}
         </div>
+
+        <div className={styles.divider} />
+        <div className={styles.sectionTitleRow}>
+          <h2 className={styles.sectionHeading}>Værktøjer</h2>
+        </div>
+        <div className={styles.divider} />
+        <ToolsSection />
       </section>
     </div>
   );

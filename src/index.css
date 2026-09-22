@@ -55,22 +55,32 @@ p {
 }
 
 h1 {
-  max-width: 760px;
-  margin-bottom: 1rem;
-  color: #D381B1;
-  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  margin: 0;
+  max-width: none;
+  color: #D18F1E;
+  font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: clamp(2.9rem, 10vw, 5.4rem);
   line-height: 0.95;
   letter-spacing: 0;
-  font-weight: 400;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-weight: 800;
+  text-shadow:
+    -2px -2px 0 #8d3470,
+    2px -2px 0 #8d3470,
+    -2px 2px 0 #8d3470,
+    2px 2px 0 #8d3470;
 }
 
 h2 {
-  margin-bottom: 0.75rem;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  line-height: 1.05;
+  margin: 0;
+  font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: 0;
-  color: #D381B1;
+  color: #D18F1E;
+    text-shadow:
+    -1px -1px 0 #8d3470,
+    1px -1px 0 #8d3470,
+    -1px 1px 0 #8d3470,
+    1px 1px 0 #8d3470;
 }
 
 h3 {
