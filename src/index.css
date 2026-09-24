@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=DynaPuff:wght@400..700&display=swap');
+ 
 :root {
   font-family: "Inter", sans-serif;
   color: #1d2430;
@@ -58,7 +60,7 @@ h1 {
   margin: 0;
   max-width: none;
   color: #D18F1E;
-  font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", cursive;
+  font-family: "DynaPuff", "Trebuchet MS", cursive;
   font-size: clamp(2.9rem, 10vw, 5.4rem);
   line-height: 0.95;
   letter-spacing: 0;
@@ -72,7 +74,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: "Baloo 2", "Comic Sans MS", "Trebuchet MS", cursive;
+  font-family: "DynaPuff", "Trebuchet MS", cursive;
   font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: 0;
   color: #D18F1E;
@@ -84,6 +86,7 @@ h2 {
 }
 
 h3 {
+  font-family: "DynaPuff", "Trebuchet MS", cursive;
   margin-bottom: 0.6rem;
   font-size: 1.35rem;
   letter-spacing: 0;
