@@ -4,6 +4,10 @@
   color: #f7f5f2;
 }
 
+.footer h2 {
+  font-size: 6rem;
+}
+
 .inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
