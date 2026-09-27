@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Coiny&family=DynaPuff:wght@400..700&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap'); 
+
 :root {
   font-family: "Inter", sans-serif;
-  color: #1d2430;
+  color: #333333;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +23,10 @@ body,
 body {
   min-width: 320px;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -57,40 +61,28 @@ p {
 }
 
 h1 {
+  font-family: "Afacad", sans-serif;
   margin: 0;
   max-width: none;
-  color: #D18F1E;
-  font-family: "DynaPuff", "Trebuchet MS", cursive;
-  font-size: clamp(2.9rem, 10vw, 5.4rem);
+  color: #8d3470;
+  font-size: clamp(1rem, 8vw, 3rem);
   line-height: 0.95;
   letter-spacing: 0;
-  font-weight: 800;
-  text-shadow:
-    -2px -2px 0 #8d3470,
-    2px -2px 0 #8d3470,
-    -2px 2px 0 #8d3470,
-    2px 2px 0 #8d3470;
+  font-weight: 400;
 }
 
 h2 {
   margin: 0;
-  font-family: "DynaPuff", "Trebuchet MS", cursive;
-  font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: 0;
-  color: #D18F1E;
-    text-shadow:
-    -1px -1px 0 #8d3470,
-    1px -1px 0 #8d3470,
-    -1px 1px 0 #8d3470,
-    1px 1px 0 #8d3470;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
 }
 
 h3 {
-  font-family: "DynaPuff", "Trebuchet MS", cursive;
   margin-bottom: 0.6rem;
   font-size: 1.35rem;
   letter-spacing: 0;
-  color: #333333;
+  font-weight: 100;
 }
 
 p {
