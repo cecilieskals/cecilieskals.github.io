@@ -12,17 +12,18 @@ function HomePage() {
     <div className={styles.homePage}>
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Cecilie Skals</h1>
-          <p className={styles.heroText}>
-           Jeg arbejder med design af digitale produkter
-          </p>
+          <p className={styles.heroText}>Mit navn er Cecilie Thykjær Skals</p>
+          <h1 className={styles.heroTitle}>
+            <span className={styles.line}>Jeg er visuel</span>
+            <span className={styles.line}>
+              og <span className={styles.highlight}>digital designer </span>
+            </span>
+          </h1>
         </div>
+
         <div className={styles.imageContainer}>
           <img src={profileImage} alt="Profilbillede" />
         </div>
-        {/* <button className="hero-arrow" onClick={scrollToProjects} aria-label="Gå til projekter">
-          ↓
-        </button> */}
       </section>
 
       <section className={styles.projectsSection} id="section">
@@ -46,14 +47,19 @@ function HomePage() {
               </div>
             </article>
           ))}
+          <Link to="/projects" className={styles.viewAllButton}>
+            Se alle projekter
+          </Link>
         </div>
 
-        <div className={styles.divider} />
-        <div className={styles.sectionTitleRow}>
-          <h2 className={styles.sectionHeading}>Værktøjer</h2>
+        <div className={styles.sectionHeader}>
+          <div className={styles.divider} />
+          <div className={styles.sectionTitleRow}>
+            <h2 className={styles.sectionHeading}>Værktøjer</h2>
+          </div>
+          <div className={styles.divider} />
+          <ToolsSection />
         </div>
-        <div className={styles.divider} />
-        <ToolsSection />
       </section>
     </div>
   );
