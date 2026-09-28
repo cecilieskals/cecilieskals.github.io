@@ -12,11 +12,13 @@ function HomePage() {
     <div className={styles.homePage}>
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <p className={styles.heroText}>Mit navn er Cecilie Skals, og jeg er</p>
+          <p className={styles.heroText}>
+            Mit navn er Cecilie Skals, og jeg arbejder med
+          </p>
           <h1 className={styles.heroTitle}>
-            <span className={styles.line}>visuel og</span>
             <span className={styles.line}>
-              digital <span className={styles.highlight}> designer </span>
+              <span className={styles.highlight}> design </span>
+              af digitale <span className={styles.line}> produkter </span>
             </span>
           </h1>
         </div>
