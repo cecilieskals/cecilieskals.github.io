@@ -1,12 +1,45 @@
 const projects = [
   {
+    slug: "onboarding",
+    title: "Vuuh",
+    summary: "Design af en problemfri onboarding-oplevelse. Hvordan kan vi hjælpe modeforhandlere med at installere, konfigurere og begynde at bruge Vuuh uden personlig assistance?",
+    description: "Overordnet vurdering: UX-Audit tager udgangspunkt i persona 1 og viser at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”,  “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen: Brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.Muligheden: At appen kan opstilles selvstændigt.Minimere stepsTydeliggøre step for step, hvor brugeren skal klikke for at fortsætte.Eksempel: “Fjern unødvendige klik fra guiden, så brugeren undgår unødvendige indtryk og oplever en enkel og overskuelig proces.”",
+    focus: "Research – Design – Strategi",
+    methods: "UX Audit – Heuristisk evaluering – Wireframes – UI design",
+    tags: ["Onboarding"],
+    image: `${import.meta.env.BASE_URL}photos/vuuh.svg`,
+    images: [
+      `${import.meta.env.BASE_URL}photos/vuuh-detail1.svg`,
+      `${import.meta.env.BASE_URL}photos/vuuh-detail2.svg`,
+      `${import.meta.env.BASE_URL}photos/vuuh-detail3.svg`,
+      `${import.meta.env.BASE_URL}photos/vuuh-detail4.svg`,
+      `${import.meta.env.BASE_URL}photos/vuuh-detail5.svg`,
+    ],
+    links: [
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/8rD5x678qqW7x41Hw870dF/Gemly-Designfil?node-id=1740-26082&viewport=681%2C2244%2C0.3&t=n5fzNl0vgncwkZWn-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=1740%3A26092&page-id=1%3A5",
+      },
+    ],
+    process: [
+      {
+        title: "Centrale UX-findings - Prioritering",
+        description:"Den nuværende onboarding udfordrer brugeroplevelsen ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”,  “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer er følgende: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen: Brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.Muligheden: At appen kan opstilles selvstændigt.Minimere stepsTydeliggøre step for step, hvor brugeren skal klikke for at fortsætte.Eksempel: “Fjern unødvendige klik fra guiden, så brugeren undgår unødvendige indtryk og oplever en enkel og overskuelig proces.”",
+        image: `${import.meta.env.BASE_URL}photos/vuuh-detail1.svg`,
+      },
+    ],
+  },
+  {
     slug: "web-app",
     title: "Gemly",
     summary:
       "En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer.",
     description:
-      "En app til dig, der ønsker at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
-    tags: ["React", "Vite", "GitHub Pages"],
+      "En app til dig, der En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer. at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
+    focus: "Research – Design – Udvikling",
+    methods:
+      "Concept development – UX – Brugertests – Onboarding – Supabase – React",
+    tags: ["Web App"],
     image: `${import.meta.env.BASE_URL}photos/gemly1.svg`,
     images: [
       `${import.meta.env.BASE_URL}photos/gemly-detail1.svg`,
@@ -77,10 +110,13 @@ const projects = [
   {
     slug: "costumer-experience",
     title: "Storyhangers",
-    summary: "En webshop til en fiktiv tøj-retailer. Story Hangers er til dig, der ønsker at købe secondhand tøj af høj kvalitet. ",
+    summary:
+      "En webshop til en fiktiv tøj-retailer. Story Hangers er til dig, der ønsker at købe secondhand tøj af høj kvalitet. ",
     description:
       "Konceptudvikling af en webshop til en fiktiv retail tøjforhandler. Vores fortolkning var en premuim secondhand-tøj webshop. ",
-    tags: ["Design", "Frontend", "Proces"],
+    focus: "Research – Design – Strategi",
+    methods: "Wireframes – Brugertests – Visual design – Ecommerce UX",
+    tags: ["Webshop"],
     image: `${import.meta.env.BASE_URL}photos/storyhangers.svg`,
     // detailImage: `${import.meta.env.BASE_URL}photos/story-hangers-logo.svg`,
     images: [
@@ -141,7 +177,9 @@ const projects = [
     summary: "Re-design af Spilcaféens hjemmeside.",
     description:
       "Re-design af Spilcaféens hjemmeside med fokus på at forbedre brugeroplevelsen og gøre det nemmere for kunder at finde information om spillene.",
-    tags: ["Design", "Frontend", "Proces"],
+    focus: "Research – Design – User flow",
+    methods: "Heuristik – UX writing – Wireframes – UI design",
+    tags: ["Optimering"],
     image: `${import.meta.env.BASE_URL}photos/spilcafe.svg`,
     images: [
       `${import.meta.env.BASE_URL}photos/spilcafe-detail1.svg`,

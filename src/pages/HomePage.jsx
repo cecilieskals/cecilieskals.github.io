@@ -3,7 +3,7 @@ import ToolsSection from "../components/ToolsSection";
 import projects from "../data/projects";
 import styles from "./HomePage.module.css";
 
-const profileImage = `${import.meta.env.BASE_URL}photos/mig.svg`;
+const profileImage = `${import.meta.env.BASE_URL}photos/header.svg`;
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 3);
@@ -11,18 +11,6 @@ function HomePage() {
   return (
     <div className={styles.homePage}>
       <section className={styles.heroSection}>
-        <div className={styles.heroContent}>
-          <p className={styles.heroText}>
-            Mit navn er Cecilie Skals, og jeg arbejder med
-          </p>
-          <h1 className={styles.heroTitle}>
-            <span className={styles.line}>
-              <span className={styles.highlight}> design </span>
-              af digitale <span className={styles.line}> produkter </span>
-            </span>
-          </h1>
-        </div>
-
         <div className={styles.imageContainer}>
           <img src={profileImage} alt="Profilbillede" />
         </div>
