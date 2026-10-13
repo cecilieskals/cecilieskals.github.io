@@ -1,11 +1,36 @@
 const projects = [
   {
+    slug: "re-commerce",
+    title: "La Rouge / à l´avant",
+    summary:
+      "Re-commerce for La Rouge. Konceptudvikling af webshop med fokus på secondhand. à l´avant er til dig, der ønsker at købe secondhand tøj af høj kvalitet.",
+    description:
+      "Re-commerce for La Rouge. Konceptudvikling af en webshop med fokus på secondhand. à l´avant er til dig, der ønsker at købe secondhand tøj af høj kvalitet. Her tilbydes et bredt udvalg af tøj og accessories af høj kvalitet - både basics og unikke pieces, for at kunderne får en shoppingoplevelse, der møder deres behov.",
+    focus: "Målgruppeindsigt – Brandidentitet – Digital brugeroplevelse",
+    methods: "Konceptudvikling – Brugerundersøgelse – Research – UX/UI design",
+    tags: ["Re-commerce"],
+    image: `${import.meta.env.BASE_URL}photos/larouge2.svg`,
+    links: [
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/6Zo726U8LHnWHRK2FNyTz4/La-Rouge-Design?node-id=578-1480&viewport=306%2C-161%2C0.4&t=5tzXO2ZONt9ZMbqm-1&scaling=scale-down&content-scaling=fixed&page-id=278%3A1994",
+      },
+      {
+        label: "Figma designfil",
+        href: "https://www.figma.com/design/6Zo726U8LHnWHRK2FNyTz4/La-Rouge-Design?node-id=278-1994&t=6K14Vl6CkUKL8ib8-1",
+      },
+    ],
+  },
+  {
     slug: "onboarding",
     title: "Vuuh",
-    summary: "Design af en problemfri onboarding-oplevelse. Hvordan kan vi hjælpe modeforhandlere med at installere, konfigurere og begynde at bruge Vuuh uden personlig assistance?",
-    description: "Overordnet vurdering: UX-Audit tager udgangspunkt i persona 1 og viser at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”,  “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen: Brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.Muligheden: At appen kan opstilles selvstændigt.Minimere stepsTydeliggøre step for step, hvor brugeren skal klikke for at fortsætte.Eksempel: “Fjern unødvendige klik fra guiden, så brugeren undgår unødvendige indtryk og oplever en enkel og overskuelig proces.”",
-    focus: "Research – Design – Strategi",
-    methods: "UX Audit – Heuristisk evaluering – Wireframes – UI design",
+    summary:
+      "Design af en problemfri onboarding-oplevelse. Hvordan kan vi hjælpe modeforhandlere med at installere, konfigurere og begynde at bruge Vuuh uden personlig assistance?",
+    description:
+      "Formålet med projektet var at designe en problemfri onboarding-oplevelse for Vuuh. Målet var at hjælpe brugerne med at installere, konfigurere og begynde at bruge Vuuh uden behov for personlig assistance. Udfordringen var at gøre en kompleks og forvirrende opsætningsprocess mere overskuelig og dermed hjælpe brugeren sikkert gennem de nødvendige trin.",
+    focus: "Userflow – Onboarding",
+    methods:
+      "Onboarding – UX/UI design – Walkthrough – UX Audit – Observationcards",
     tags: ["Onboarding"],
     image: `${import.meta.env.BASE_URL}photos/vuuh.svg`,
     images: [
@@ -18,27 +43,100 @@ const projects = [
     links: [
       {
         label: "Figma Prototype",
-        href: "https://www.figma.com/proto/8rD5x678qqW7x41Hw870dF/Gemly-Designfil?node-id=1740-26082&viewport=681%2C2244%2C0.3&t=n5fzNl0vgncwkZWn-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=1740%3A26092&page-id=1%3A5",
+        href: "https://www.figma.com/proto/MeZ6V3TVoAOar2gzLS52rb/Case-2---Vuuh?node-id=187-1116&viewport=214%2C341%2C0.05&t=ROdR9HOpFjPJyDFR-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=187%3A1116&page-id=102%3A2439",
+      },
+      {
+        label: "UX Audit",
+        href: "https://drive.google.com/file/d/1r6ZC2bulI5YFLgJ1n-_2rd0doWEptNk5/view",
       },
     ],
     process: [
       {
-        title: "Centrale UX-findings - Prioritering",
-        description:"Den nuværende onboarding udfordrer brugeroplevelsen ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”,  “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer er følgende: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen: Brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.Muligheden: At appen kan opstilles selvstændigt.Minimere stepsTydeliggøre step for step, hvor brugeren skal klikke for at fortsætte.Eksempel: “Fjern unødvendige klik fra guiden, så brugeren undgår unødvendige indtryk og oplever en enkel og overskuelig proces.”",
+        title: "Undersøgelse og prioritering",
+        description:
+          "Først blev der udarbejdet observationcards for at identificere de største udfordringer i onboarding-processen. På baggrund af disse blev der udarbejdet UX-findings, som blev prioriteret for at fokusere på de mest kritiske områder. Med udgangspunkt i disse findings, blev der udviklet et guided onboardignsflow, hvor brugeren bliver guided step for step gennem opsætnignen. Flowet anvender en walktrough, som hjælper brugeren med at forstå, hvordan de skal navigere gennem processen og udføre de nødvendige handlinger.",
         image: `${import.meta.env.BASE_URL}photos/vuuh-detail1.svg`,
+      },
+      {
+        title: "UX-Finding 1 - Successide",
+        image: `${import.meta.env.BASE_URL}photos/vuuh-detail2.png`,
+      },
+      {
+        title: "UX-Finding 2 - Connect to Shopify",
+        image: `${import.meta.env.BASE_URL}photos/vuuh-detail3.png`,
+      },
+      {
+        title: "UX-Finding 3 - Efter udfyldt formular",
+        image: `${import.meta.env.BASE_URL}photos/vuuh-detail4.png`,
+      },
+      {
+        title: "UX-Finding 4 - Test-ordre flow",
       },
     ],
   },
+
+  {
+    slug: "optimering",
+    title: "Mellemrum",
+    summary:
+      "Optimering af en fiktiv hjemmeside med fokus på errorhandling og accessibility.",
+    description:
+      "Projektet tog udgangspunkt i en fiktiv hjemmeside, hvor fokus har været på at identificere og optimerere errorhandling og accessibility for at forbedre brugeroplevelsen. De største udfordringer og optimeringsmuligheder blev identificeret i en UX-audit, hvortil der er udviklet løsninger for at forhindre situationer, hvor brugeren kan opleve fejl, usikkerhed eller manglende feedback.",
+    focus: "Optimering – Frontend – UX",
+    methods: "UX Audit – Supabase – React – Accessibility – Errorhandling",
+    tags: ["Optimering"],
+    image: `${import.meta.env.BASE_URL}photos/mellemrum.svg`,
+    images: [
+      `${import.meta.env.BASE_URL}photos/mellemrum-detail1.png`,
+      `${import.meta.env.BASE_URL}photos/mellemrum-detail2.png`,
+      `${import.meta.env.BASE_URL}photos/mellemrum-detail3.png`,
+    ],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/cecilieskals/mellemrum",
+      },
+      {
+        label: "Github Pages",
+        href: "https://cecilieskals.github.io/mellemrum/",
+      },
+    ],
+    process: [
+      {
+        title: "Undersøgelse og prioritering af UX-findings",
+        description:
+          "En UX-audit blev udført for at identificere de største udfordringer og optimeringsmuligheder på hjemmesiden. Dette gav mulighed for at udvikle løsninger, der forbedrer brugeroplevelsen og sikrer, at brugeren ikke oplever fejl, usikkerhed eller manglende feedback.",
+        image: `${import.meta.env.BASE_URL}photos/mellemrum-detail1.png`,
+      },
+      {
+        title: "Errorhandling",
+      },
+      {
+        title: "Loadingstates",
+      },
+      {
+        title: "Supabase integration",
+      },
+    ],
+    reflections: [
+      {
+        title: "Refleksion",
+        description:
+          "Projektet har givet mig erfaring med at identificere og optimere brugeroplevelsen på en hjemmeside. Jeg har lært vigtigheden af at udføre UX-audits for at identificere udfordringer og optimeringsmuligheder, samt hvordan med prioriterer sådanne. Dertil har jeg lært hvordan man udvikler løsninger bagom, der forbedrer brugeroplevelsen og sikrer, at brugeren ikke oplever fejl, usikkerhed eller manglende feedback. Desuden har projektet lært mig, at en god brugeroplevelse ikke kun handler om det visuelle design, men også om at håndtere fejl og kommunikere tydeligt med brugeren. Jeg har fået en dybere forståelse for både hvordan, men også vigtigheden i, at man bagom kan skabe en mere brugervenlig oplevelse for brugeren. Derudover har jeg også fået mere erfaring med Supabase i forbindelse med optimering af tilmeldingsflowet.",
+      },
+    ],
+  },
+
   {
     slug: "web-app",
     title: "Gemly",
     summary:
       "En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer.",
     description:
-      "En app til dig, der En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer. at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
+      "En applikation for skjulte perler. Til dig, der ønsker at finde 'hidden gems' overalt i verden. En app, der hjælper dig med at finde nye steder gennem søgning og filtrering, gemme dine favoritter i personlige mapper og album, orientere dig over steder nær dig, og dele anbefalinger med andre gennem opslag og kommentarer. at  finde 'hidden gems' overalt i verden. Appen giver brugeren mulighed for at gemme og organisere steder, samt dele og poste deres egne oplevelser og anbefalinger.",
     focus: "Research – Design – Udvikling",
     methods:
-      "Concept development – UX – Brugertests – Onboarding – Supabase – React",
+      "Konceptudvikling – UX – Brugertests – Onboarding – Supabase – React",
     tags: ["Web App"],
     image: `${import.meta.env.BASE_URL}photos/gemly1.svg`,
     images: [
