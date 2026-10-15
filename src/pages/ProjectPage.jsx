@@ -53,7 +53,7 @@ function ProjectPage() {
                 rel="noreferrer"
                 className={styles.primaryButton}
               >
-                {link.label} 
+                {link.label}
               </a>
             ))}
           </div>
@@ -65,31 +65,28 @@ function ProjectPage() {
       </header>
 
       <section className={styles.section}>
-        <h3>Produktet</h3>
-        <h3>Udfordringen</h3>
-        <h3>Løsningen</h3>
-        <h3>Arbejdsprocessen</h3>
         {project.process?.map((step, index) => (
-          <div key={step.title} className={styles.processRow}>
-            <div className={styles.processImageWrap}>
-              <img src={step.image} alt="" className={styles.processImage} />
-            </div>
-
+          <div key={`${step.title}-${index}`} className={styles.processItem}>
             <div className={styles.processText}>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
+              {step.image ? (
+                <div className={styles.processImage}>
+                  <img src={step.image} alt={step.title} />
+                </div>
+              ) : null}
             </div>
           </div>
         ))}
       </section>
 
       <section className={styles.section}>
-      {project.reflections?.map((reflection, index) => (
-        <div key={reflection.title} className={styles.reflectionRow}>
-          <h3>{reflection.title}</h3>
-          <p>{reflection.description}</p>
-        </div>
-      ))}
+        {project.reflections?.map((reflection, index) => (
+          <div key={reflection.title} className={styles.reflectionRow}>
+            <h3>{reflection.title}</h3>
+            <p>{reflection.description}</p>
+          </div>
+        ))}
       </section>
     </article>
   );
