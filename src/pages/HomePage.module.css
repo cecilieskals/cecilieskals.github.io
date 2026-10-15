@@ -95,7 +95,7 @@
 }
 
 .projectCard + .projectCard {
-  border-top: 1px solid #9a9a9a;
+  border-top: 0.2px solid #c7c7c7;
 }
 
 .projectCardReverse {
