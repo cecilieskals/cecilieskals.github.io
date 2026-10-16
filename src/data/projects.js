@@ -1,6 +1,6 @@
 const projects = [
   {
-    slug: "re-commerce",
+    slug: "larouge",
     title: "La Rouge / à l´avant",
     summary:
       "Re-commerce for La Rouge. Konceptudvikling af webshop med fokus på secondhand. à l´avant er til dig, der ønsker at købe secondhand tøj af høj kvalitet.",
@@ -20,7 +20,7 @@ const projects = [
         href: "https://www.figma.com/design/6Zo726U8LHnWHRK2FNyTz4/La-Rouge-Design?node-id=278-1994&t=6K14Vl6CkUKL8ib8-1",
       },
       {
-        label: "Spørgeskema",
+        label: "Research",
         href: "https://drive.google.com/file/d/1Zy-B-iCLXyCcXEQ9e4ffg3GL_UAlKz-B/view",
       },
       {
@@ -35,16 +35,33 @@ const projects = [
           "I dag har La Rouges recommerce ingen selvstændig visuel identitet, tone of voice eller målgruppe, hvilket betyder at potentialet langt fra bliver udnyttet. Udfordringen lyder derfor at konceptudvikle og rebrande subbrandet, som skal kunne stå på egne ben med egen målgruppe, brandpersonlighed, visuel identitet og tone of voice. Der skal tænkes både købsflow men også salgflow. Målet er at få målgruppen til at gøre brug af konceptet og skabe mere viden herom samt aktivitet.",
       },
       {
+        title: "Målgruppe",
+        description:
+          "Målgruppen består af 18-35-årige kvinder, der i forvejen shopper secondhand. Researchen gav flere vigtige indsigter, herunder var der særligt ét svar i spørgeskemaet, som gik igen, målgruppens motivation til at shoppe secondhand – nemlig det, at man kan finde unikke items og skabe sin egen personlige stil. Dette blev essentielt i konceptudviklingen af àl’avant og udvikling af sælg-flowet.",
+        image: `${import.meta.env.BASE_URL}photos/larouge-detail3.svg`,
+      },
+      {
         title: "Brandidentitet",
         description:
-          "Researchen gav flere vigtige indsigter, herunder var der særligt ét svar i spørgeskemaet, som gik igen, målgruppens motivation til at shoppe secondhand – nemlig det, at man kan finde unikke items og skabe sin egen personlige stil. Dette blev essentielt i konceptudviklingen af àl’avant. For at imødekomme og understøtte målgruppens behov, blev det prioriteret, at der ikke kun skulle videresælges La Rouges egne produkter, men også være plads til andre kvalitetsmærker. Konceptet giver mulighed for at kombinere basics med mere unikke fund, hvilket giver mulighed for at målgruppen kan finde og bygge garderobens fundament samt unikke og individuelle fund. Àl’avant er udarbejdet som en del af et Branded House koncept. Det betyder at brandet har sin egen visuelle identitet, men samtidig læner sig meget op ad La Rouge og trækker på deres værdier og er bygget på samme DNA og dels trækker på deres farver og æstetik. Samtidig adskiller àl’avant sig med nogle nøgleord: Hvis La Rouge er feminin, stærk, klassisk, autentisk, sofistikeret - Så er à l´avant feminin, stærk, selvstændig, legende, eksklusiv.",
-        image: `${import.meta.env.BASE_URL}photos/larouge-detail2.svg`
+        "For at imødekomme og understøtte målgruppens behov, blev det prioriteret, at der ikke kun skulle videresælges La Rouges egne produkter, men også andre kvalitetsmærker. Konceptet gør det muligt for målgruppen at finde og bygge garderobens fundament samt unikke og individuelle fund. Àl’avant er udarbejdet som en del af et Branded House koncept. Det betyder at brandet har sin egen visuelle identitet, men samtidig læner sig meget op ad La Rouge og trækker på deres værdier og er bygget på samme DNA. Samtidig adskiller àl’avant sig med nogle nøgleord: Hvis La Rouge er feminin, stærk, klassisk, autentisk, sofistikeret - Så er à l´avant feminin, stærk, selvstændig, legende, eksklusiv. Målgruppen adskiller sig fra La Rouges, og det samme gælder for tone of voice og den visuelle identitet. Dog stadig med rødder hos La Rouge, og dels ligger sig op ad deres farver og æstetik.",
+        image: `${import.meta.env.BASE_URL}photos/larouge-detail2.svg`,
+      },
+      {
+        title: "Købs-flow",
+        description:
+          "Det legende kommer til udtryk i en ellers enkel og stilren hjemmeside ved brug af flere farver og runde knapper enkelte steder. Filtreringsmuligheder er blevet tilføjet, da spørgeskemaet viste at denne er essentiel for shoppingoplevelsen. Fordelen ved onlineshopping er nemlig effektiviteten, og målgruppen ønsker at kunne finde hurtigt og nemt frem til specifikke produkter. Det samme gælder for størrelsesguiden og billeder af det faktiske produkt, som netop er tilføjet, da én af de største usikkerheder målgruppen oplever ved onlineshopping, er forkert pasform eller at produktet på anden vis ikke er som forventet.",
+        image: `${import.meta.env.BASE_URL}photos/larouge-detail4.svg`,
+      },
+      {
+        title: "Sælg-flow",
+        description:
+          "Flowet for at sælge sit gamle tøj er intuitivt og lige til. Det er retænt, så det er tilpasset konceptet med flere mærker. Brugeren indtaster oplysninger om produktet, dvs. stand, kategori samt mærke. Der vil være et udvalg af mærker, som man kan vælge at sende ind. Det er med den hensigt at alt tøjet der videresælges, skal leve op til samme standarder som La Rouge. Det betyder mærker af høj kvalitet.",
+        image: `${import.meta.env.BASE_URL}photos/larouge-detail.svg`,
       },
       {
         title: "Optimering",
         description:
-          "Àl’avant er en webshop, der sælger secondhand tøj af høj kvalitet. Målgruppen består af 18-35-årige kvinder, der i forvejen shopper secondhand. Målgruppen adskiller sig fra La Rouges, og det samme gælder for tone of voice og den visuelle identitet. Dog stadig med rødder hos La Rouge. Det ses ved den enkle og stilrene hjemmeside, der dog har et twist med farver og runde knapper enkelte steder, for at skabe et legende udtryk. Filtreringsmuligheder er blevet tilføjet, da spørgeskemaet viste at denne er essentiel for shoppingoplevelsen. Fordelen ved onlineshopping er nemlig effektiviteten, og målgruppen ønsker at kunne finde hurtigt og nemt frem til specifikke produkter. Det samme gælder for størrelsesguiden og billeder af det faktiske produkt, som netop er tilføjet, da én af de største usikkerheder målgruppen oplever ved onlineshopping er forkert pasform eller at produktet på anden vis ikke er som forventet. Konceptet er langt fra det, La Rouge selv har lige nu. Det har medført retænkning af flowet for at sælge sit gamle tøj.Hertil er der blevet indhentet inspiration fra Swappie og Greenmind. Det betyder, at brugeren indtaster oplysninger om produktet, dvs. stand, kategori samt mærke. Der vil være et udvalg af mærker, som man kan vælge at sende ind. Det er med den hensigt at alt tøjet der videresælges, skal leve op til samme standarder som La Rouge. Det betyder mærker af høj kvalitet.",
-        image: `${import.meta.env.BASE_URL}photos/larouge-detail.svg`
+          "Researchen og indsigterne fra målgruppen har medført retænkning af hele konceptet. Det har skabt àl’avant by La Rouge, en webshop, der formidler secondhand tøj af høj kvalitet fra forskellige mærker. Det gør det muligt for målgruppen at finde unikke items, uden at gå på kompromis med kvaliteten.",
       },
     ],
     reflections: [
@@ -57,7 +74,7 @@ const projects = [
   },
 
   {
-    slug: "onboarding",
+    slug: "vuuh",
     title: "Vuuh",
     summary:
       "Design af en problemfri onboarding-oplevelse. Hvordan kan vi hjælpe modeforhandlere med at installere, konfigurere og begynde at bruge Vuuh uden personlig assistance?",
@@ -92,7 +109,7 @@ const projects = [
       {
         title: "Udvalgte tiltag",
         description:
-          "Det første problem man støder på, er Vuuhs succes-side. Det er her uklart for brugeren, at Vuuhs app skal åbnes, da det ikke oplyses på siden. Det tydeliggøres desuden ikke nok, at brugeren skal huske sit shopname til senere brug i opsætningen. Konsekvensen kan være forvirring om hvorvidt oprettelsen er fuldført. Det er ikke intuitivt at skulle navigere frem og tilbage mellem sider uden den rette guidance. Den optimerede successide tydeliggør derfor hvert step vha. information om næste handling. Der er tilføjet en ”click here” knap, som fører brugeren direkte videre til Vuuh. Shopname er fremhævet og beskrevet at være essentiel for videre onboarding.Det største problem var, at Vuuhs nuværende løsning ikke indikerer, at der skal laves en test-ordre efter at have opsat Shopify. Konsekvensen er her, at brugeren risikerer at det ikke er opsat korrekt. Den optimerede løsning indebærer et onboarding-flow (in-app guidance) til test-ordren. Brugeren får vist hvert step og skal trykke på ”GOT IT!”, for at komme videre til næste step. Til sidst møder brugeren en loadingside, der forsikrer om at det er en test-ordre, for at mindske tvivl og forvirring. Til sidst bliver brugeren mødt af ”Order is successfully downloaded!”, for at tydeliggøre at steppet nu er fuldført og afsluttet.",
+          "Det første problem man støder på, er Vuuhs succes-side. Det er her uklart for brugeren, at Vuuhs app skal åbnes, da det ikke oplyses på siden. Det tydeliggøres desuden ikke nok, at brugeren skal huske sit shopname til senere brug i opsætningen. Konsekvensen kan være forvirring om hvorvidt oprettelsen er fuldført. Det er ikke intuitivt at skulle navigere frem og tilbage mellem sider uden den rette guidance. Den optimerede successide tydeliggør derfor hvert step vha. information om næste handling. Der er tilføjet en ”click here” knap, som fører brugeren direkte videre til Vuuh. Shopname er fremhævet og beskrevet at være essentiel for videre onboarding. Det største problem var, at Vuuhs nuværende løsning ikke indikerer, at der skal laves en test-ordre efter at have opsat Shopify. Konsekvensen er her, at brugeren risikerer at det ikke er opsat korrekt. Den optimerede løsning indebærer et onboarding-flow (in-app guidance) til test-ordren. Brugeren får vist hvert step og skal trykke på ”GOT IT!”, for at komme videre til næste step. Derefter møder brugeren en loadingside, der forsikrer om at det er en test-ordre, for at mindske tvivl og forvirring. Til sidst bliver brugeren mødt af ”Order is successfully downloaded!”, for at tydeliggøre at steppet nu er fuldført og afsluttet.",
         image: `${import.meta.env.BASE_URL}photos/vuuh-detail2.svg`,
       },
       {
@@ -111,7 +128,7 @@ const projects = [
   },
 
   {
-    slug: "optimering",
+    slug: "mellemrum",
     title: "Mellemrum",
     summary:
       "Optimering af en fiktiv hjemmeside med fokus på errorhandling og accessibility.",
@@ -144,13 +161,13 @@ const projects = [
       {
         title: "Teknisk fokus",
         description:
-          "De største udfordringer og optimeringsmuligheder blev identificeret i en UX-audit med prioriteret rækkefølge, hvortil der er udviklet konkrete løsninger. Fokuset har været at forhindre situationer, hvor brugeren kan opleve fejl, usikkerhed eller manglende feedback. Løsningen bestod derfor af at optimere den eksisterende kode, hvor fejlhåndtering, tilgængelighed og et fungerende tilmeldingsflow blev prioriteret. Det betyder at Supabase først og fremmest blev konfigureret, så tilmeldingsflowet kunne fungere korrekt samt undgå duplikeret kode. Supabase var nemlig ikke opsat korrekt, hvilket betød at når en bruger forsøgte at tilmelde sig et event, blev dennes data ikke korrekt tilkoblet eventet. Supabase blev desuden restruktureret, da der var problemer med duplikeret kode, hvilket kunne resultere i problemer ved opdatering ét sted i koden og ikke andre. Koden er blevet mere struktureret ved at organisere, opdele og oprette forskellige mapper og filer som bl.a. module-css og forskellige components til håndtering af forskelligt ansvar. Det gør at koden bliver mere overskuelig og lettere at genbruge og videreudvikle. Der blev taget fat i errorhandling ved at tilføje beskeder ved tilmelding og fejl, herunder feedback og manglende udfyldning af felter. Det blev gjort, så brugeren ikke følte tvivl om hvorvidt de var tilmeldt et event eller om der var mangelfuld information. Dertil blev det også sikret, at brugere kun kan tilmelde sig et event én gang. Fejlnavigering blev håndteret med korrekt navigering til 404-side, for at brugeren ikke blev fanget ved error. Loading states og skeletons er tilføjet, for at brugeren får feedback mens indholdet læses, så brugeren ikke er i tvivl om siden virker, men ved at indholdet blot indlæses. Resultatet består derfor ikke af særlig mange visuelle ændringer og redesign, men i stedet har funktionaliteten af koden været i fokus.",
+          "De største udfordringer og optimeringsmuligheder blev identificeret i en UX-audit med prioriteret rækkefølge, hvortil der er udviklet konkrete løsninger. Fokuset har været at forhindre situationer, hvor brugeren kan opleve fejl, usikkerhed eller manglende feedback. Løsningen bestod derfor af at optimere den eksisterende kode, hvor fejlhåndtering, tilgængelighed og et fungerende tilmeldingsflow blev prioriteret. Det betyder at Supabase først og fremmest blev konfigureret, så tilmeldingsflowet kunne fungere korrekt samt undgå duplikeret kode. Supabase var nemlig ikke opsat korrekt, hvilket betød at når en bruger forsøgte at tilmelde sig et event, blev dennes data ikke korrekt tilkoblet eventet. Supabase blev desuden restruktureret, da der var problemer med duplikeret kode, hvilket kunne resultere i problemer ved opdatering ét sted i koden og ikke andre. Koden er blevet mere struktureret ved at organisere, opdele og oprette forskellige mapper og filer som bl.a. module-css og forskellige components til håndtering af forskelligt ansvar. Det gør at koden bliver mere overskuelig og lettere at genbruge og videreudvikle. Der blev taget fat i errorhandling ved at tilføje beskeder ved tilmelding og fejl, herunder feedback og manglende udfyldning af felter. Det blev gjort, så brugeren ikke følte tvivl om hvorvidt de var tilmeldt et event eller om der var mangelfuld information. Dertil blev det også sikret, at brugere kun kan tilmelde sig et event én gang. Fejlnavigering blev håndteret med korrekt navigering til 404-side, for at brugeren ikke blev fanget ved error. Loading states og skeletons er tilføjet, for at brugeren får feedback mens indholdet læses, så brugeren ikke er i tvivl om siden virker, men ved at indholdet blot indlæses.",
         image: `${import.meta.env.BASE_URL}photos/mellemrum-detail1.svg`,
       },
       {
         title: "Optimeringen",
         description:
-          "Resultatet består derfor ikke af særlig mange visuelle ændringer og redesign, men i stedet har funktionaliteten af koden været i fokus.",
+          "Resultatet består ikke af særlig mange visuelle ændringer eller det helt store redesign, men i stedet har funktionaliteten af koden været i fokus.",
       },
     ],
     reflections: [
